@@ -4,12 +4,13 @@ let age: number;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
-type Person = {
-  name: string;
-  age: number;
-};
-let person: Person;
-role = [5, "5"];
+// type Person = {
+//   name: string;
+//   age?: number;
+// };
+// let person: Person;
+// let lotsOfPeople: Person[];
+
 function App() {
   return <div></div>;
 }
