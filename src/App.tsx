@@ -1,6 +1,6 @@
 import "./App.css";
 let name: string;
-let age: number;
+let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
@@ -10,6 +10,7 @@ let role: [number, string];
 // };
 // let person: Person;
 // let lotsOfPeople: Person[];
+let printName: (name: string) => void;
 
 function App() {
   return <div></div>;
