@@ -1,11 +1,11 @@
 import "./styles.css";
 
-interface props {
+interface Props {
   todo: string;
   setTodo: React.Dispatch<React.SetStateAction<string>>;
   handleAdd: (e: React.FormEvent) => void;
 }
-const InputField = () => {
+const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
   return (
     <form
       className="input"
@@ -17,9 +17,9 @@ const InputField = () => {
       <input
         type="text"
         placeholder="Enter a Todo"
-        // value={todo}
+        value={todo}
         // ref={inputRef}
-        // onChange={(e) => setTodo(e.target.value)}
+        onChange={(e) => setTodo(e.target.value)}
         className="input__box"
       />
       <button type="submit" className="input__submit">
