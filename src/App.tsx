@@ -16,7 +16,7 @@ const App: FC = () => {
   };
   return (
     <div>
-      <span className="heading">Taskify</span>
+      <span className="heading">Tasks</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
     </div>
   );
