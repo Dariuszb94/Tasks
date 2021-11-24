@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { FC, useState } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
@@ -18,6 +19,9 @@ const App: FC = () => {
     <div>
       <span className="heading">Tasks</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      {todos.map((t) => (
+        <li>{t.todo}</li>
+      ))}
     </div>
   );
 };
