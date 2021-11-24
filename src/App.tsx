@@ -2,6 +2,7 @@ import { link } from "fs";
 import { FC, useState } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
+import TodoList from "./components/TodoList";
 import { Todo } from "./model";
 
 const App: FC = () => {
@@ -19,9 +20,7 @@ const App: FC = () => {
     <div>
       <span className="heading">Tasks</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-      {todos.map((t) => (
-        <li>{t.todo}</li>
-      ))}
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 };
