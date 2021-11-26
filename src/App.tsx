@@ -1,4 +1,3 @@
-import { link } from "fs";
 import { FC, useState } from "react";
 import "./App.css";
 import InputField from "./components/InputField";
